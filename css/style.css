@@ -1,0 +1,127 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}
+.main{
+  width:600px;
+  height: 450px;
+  background-color: aqua;
+  margin: 0 auto;
+  position: relative;
+}
+.one{
+  width: 180px;
+  height: 150px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+.two{
+  width: 180px;
+  height: 150px;
+  background-color: green;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.three{
+  width: 180px;
+  height: 150px;
+  background-color: blue;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.four{
+  width: 180px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.five{
+  width: 180px;
+  height: 180px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  outline: 5px solid brown;
+}
+
+.main2 ul{
+  text-align: center;
+  margin-top: 160px;
+}
+.main2 ul li{
+  position: relative;
+  display: inline-block;
+}
+.main2 ul li::after{
+  position: absolute;
+  content: '';
+  top: -31px;
+  left: 0px;
+  width: 2px;
+  height:0px;
+  background-color: green;
+  transition: 0.5s;
+}
+.main2 ul li:hover::after{
+   height: 83px;
+}
+.main2 ul li::before{
+  position: absolute;
+  content: '';
+  top: -31px;
+  right: 0px;
+  width: 2px;
+  height: 0px;
+  background-color: black;
+  transition: 0.5s;
+}
+.main2 ul li:hover::before{
+  height: 83px;
+}
+.main2 ul li a{
+  font-family: sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px 50px;
+  position: relative;
+}
+.main2 ul li a::after{
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  width: 0px;
+  background-color: red;
+  transition: 0.5s;
+}
+.main2 ul li a:hover::after{
+  width: 100%;
+}
+.main2 ul li a::before{
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  right: 0px;
+  height: 2px;
+  width: 0px;
+  background-color: blue;
+  transition: 0.5s;
+}
+.main2 ul li a:hover::before{
+  width: 100%;
+}
